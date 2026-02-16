@@ -3,9 +3,7 @@
 	"version": "1.0.0",
 	"description": "Cloudflare account switcher for wrangler - easily switch between multiple Cloudflare accounts",
 	"type": "module",
-	"bin": {
-		"cf-account-switcher": "./dist/index.js"
-	},
+	"bin": "./dist/index.js",
 	"scripts": {
 		"start": "bun run src/index.ts",
 		"build": "tsgo -p tsconfig.build.json",
