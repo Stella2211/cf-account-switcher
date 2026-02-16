@@ -1,4 +1,4 @@
-#!/usr/bin/env node
+#!/usr/bin/env bun
 import { addAccount } from "./commands/add.js"
 import { listAccounts } from "./commands/list.js"
 import { removeAccount } from "./commands/remove.js"

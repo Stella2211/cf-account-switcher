@@ -3,11 +3,11 @@
 	"version": "1.0.0",
 	"description": "Cloudflare account switcher for wrangler - easily switch between multiple Cloudflare accounts",
 	"type": "module",
-	"bin": "./dist/index.js",
+	"bin": "./src/index.ts",
 	"scripts": {
 		"start": "bun run src/index.ts",
 		"build": "tsgo -p tsconfig.build.json",
-		"prepare": "npm run build",
+		"prepare": "bun run build",
 		"lint": "biome check .",
 		"lint:fix": "biome check --write .",
 		"format": "biome format --write .",
@@ -22,15 +22,14 @@
 	],
 	"author": "stella2211",
 	"license": "MIT",
-	"dependencies": {
-		"@typescript/native-preview": "^7.0.0-dev.20251223.1"
-	},
 	"devDependencies": {
 		"@biomejs/biome": "^2.3.10",
 		"@types/bun": "latest",
-		"@types/node": "^22.0.0"
+		"@types/node": "^22.0.0",
+		"@typescript/native-preview": "^7.0.0-dev.20251223.1"
 	},
 	"files": [
+		"src",
 		"dist"
 	],
 	"engines": {
