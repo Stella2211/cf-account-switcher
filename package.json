@@ -7,7 +7,7 @@
 	"scripts": {
 		"start": "bun run src/index.ts",
 		"build": "tsgo -p tsconfig.build.json",
-		"prepare": "bun run build",
+		"prepare": "npm run build",
 		"lint": "biome check .",
 		"lint:fix": "biome check --write .",
 		"format": "biome format --write .",
